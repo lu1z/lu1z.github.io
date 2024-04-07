@@ -37,7 +37,7 @@ function Search() {
           </select>
         </div>
         <div className="flex row div-buttons">
-          <button className="button-56" type="submit">Buscar</button>
+          <button className="button" type="submit">Buscar</button>
           <button
             className="button"
             type="button"
