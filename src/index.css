@@ -297,3 +297,11 @@ header .container-button {
     width: 100%;
   } */
 /* } */
+
+@media screen and (max-width: 410px) {
+  .form {
+    display: grid;
+    width: 0px;
+    gap: 10px
+  }
+}
