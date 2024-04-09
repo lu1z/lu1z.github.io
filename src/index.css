@@ -28,29 +28,38 @@ h2 {
 }
 
 .section {
-  background-color:  #138a0f;
+  background-color: #138a0f;
   border: 2px solid gray;
   padding: 34px;
   border-radius: 24px;
   width: 65%;
   margin: 20px auto;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .form {
   width: 70%;
+  display:contents ;
   justify-content: center;
   align-items: center;
   margin-left: 110px;
 }
+/*
+
 
 .form-div {
   margin: 0px 10px;
 }
 
-.div-buttons {
-  margin-right: 20px
-}
+*/
+/* .div-buttons {
+  margin-right: 20px;
+  display: flex;
+  
+}  */
+
 
 .select {
   height: fit-content;
@@ -65,15 +74,25 @@ h2 {
   width: 120px; 
 }
 
+@media screen and (max-width: 980px) {
+  .section {
+    display: flex;
+  } 
 
+  .form {
+    margin-left: 0;
+  }
 
-/* info  */
+  .form-div {
+    margin-right: 0;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
 
-.container-info {
-  display: flex;
-  background-color: rgba(25, 87, 25, 0.856);
-  justify-content: space-evenly;
-  padding: 20px 0;
+  .form-div .select {
+    margin: 0;
+  }
+
 }
 
 /* highlight */
@@ -82,6 +101,7 @@ h2 {
   text-align: center;
   background-color:  #138a0f;
   padding: 20px;
+  min-height: 80vh;
 }
 
 .context-highlight h1 {
@@ -94,35 +114,183 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   margin: 20px auto;
+  flex-wrap: wrap;
 }
 
 
 .div-highlight {
   width: 46%;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   background-color: hsl(125, 48%, 69%);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-@media screen and (max-width: 1070px) {
-  .container-button {
-    width: 100%;
-  }
+/* tags do highlight */
 
-  .context-highlight {
-    width: 100%;
-  }
+/* .div-tags{
+  padding-top: 10px;
+  flex-wrap: wrap;
+  margin:auto;
+  width: 80%;
+} */
 
-  section div {
-    width: 50%;
-  }
-
-
+.tag{
+  margin: 4px 3px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #ddf8e7;
+  border-radius: 10px;
+  color: green;
+  line-height: 10px;
+  padding: 8px 6px;
+  vertical-align: text-top;
 }
-@media screen and (max-width: 980px) {
+
+.html{
+  background-color: #f8dddd;
+  color: red;
+  border: red solid 1px;
+}
+
+.css{
+  background-color: #d1e7dd;
+  color: darkgreen;
+  border: darkgreen solid 1px;
+}
+
+.frontend{
+  background-color: #f8e7dd;
+  color: rgb(255, 153, 0);
+  border: orange solid 1px;
+}
+
+.react{
+  background-color: #e6ddfa;
+  color: purple;
+  border: purple solid 1px;
+}
+
+.python{
+  background-color: #ddedf8;
+  color: blue;
+  border: blue solid 1px;
+}
+
+.backend {
+  background-color: #e5e5dc;
+  color: brown;
+  border: brown solid 1px;
+}
+
+.tailwind {
+  background-color: #f2f2f2;
+  color: gray;
+  border: gray solid 1px;
+}
+
+/* Logo das redes sociais*/
+ .social-logo{
+  height: 40px;
+  width: auto;
+ }
+
+.div-highlight .img-person {
+  width: 180px;
+  height: 180px;
+  border-radius: 45%;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.div-highlight .info-person {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  margin-left: 30px;
+}
+
+.div-student {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.div-highlight .div-flex {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.img-port {
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+  background-position: 100% 0;
+  transition: 8s;
+  cursor: pointer;
+  position: relative;
+  border-radius: 15px;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  opacity: 0;
+  transition: 2s
+}
+
+.img-port:hover .overlay {
+  opacity: 1;
+}
+
+.img-person .img-port {
+  object-fit: cover;
+}
+
+.flex-justify {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1440px){
+  .main-highlight {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .div-highlight {
+    width: 70%;
+  }
+  
+  .div-highlight .div-flex {
+    width: 100%;
+    height: 457px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
 /* Estilos para dispositivos pequenos */
 
   .main-highlight {
@@ -134,7 +302,9 @@ h2 {
 
   .div-highlight {
     width: 100%;
+    flex-direction: column;
   }
+
 
   section {
     display: flex;
@@ -172,64 +342,6 @@ h2 {
   }
 
 }
-
-/* @media screen and (max-width: 949px) {
-  
-
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .form-div {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .form .button {
-    width: 100px;
-    padding: 4px;
-  }
-} */
-
-
-/* .flex{
-  display: flex;
-}
-
-.row{
-  flex-direction: row;
-}
-
-.column{
-  flex-direction: column;
-}
-
-.justify{
-  justify-content: space-between;
-}
-
-.div-highlight{
-  background-color: green;
-  border: 2px solid gray;
-  border-radius: 5px;
-  width: fit-content;
-  margin: 20px auto;
-  align-items: center;
-}
-
-.div-student{
-  justify-content: space-around;
-  height: 97vh;
-  border-radius: 5px;
-  border: 2px solid gray;
-  margin-right: 20px;
-  margin-left:  10px;
-} */
 
 /* header */
 
@@ -277,6 +389,7 @@ header .container-button {
   transform: translateY(10px);
   transition: 100ms;
 }
+
 
 /* @media screen and (max-width: 768px) {
   .container-button .button-options {

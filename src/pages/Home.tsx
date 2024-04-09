@@ -9,15 +9,15 @@ import Post from '../types/PostType';
 function Home() {
   const [searchParams] = useSearchParams();
   const data = useContext(DataContext);
+
   const filtered = useMemo(
     () => {
-      const month = (new Date().getMonth() + 1).toString();
-      const searchFields = [...searchParams.entries(), ['date', month]];
+      const searchFields = [...searchParams.entries()];
       return searchFields.reduce<Post[]>(
         (acc, [key, val]) => acc.filter(
           ({ [key]: v }) => {
             if (Array.isArray(v)) return v.includes(val);// tags
-            if (typeof v === 'object' && 'month' in v) return v.month === Number(val);// data
+            if (typeof v === 'object') return `${v.month}-${v.year}` === val;// data
             if (typeof v === 'number') return v === Number(val);// id
             if (typeof v === 'string') return v.includes(val);// strings
             return false;
@@ -32,7 +32,6 @@ function Home() {
     <>
       <Header />
       <Search />
-      <h2>Home</h2>
       <div className="context-highlight">
         <h1>Destaques do mês</h1>
         <div className="main-highlight">

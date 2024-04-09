@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import DataContext from '../context/DataContext';
 
 function Search() {
-  const [, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const data = useContext(DataContext);
 
   const allTags = useMemo(
@@ -19,6 +19,8 @@ function Search() {
     const formData = new FormData(form) as unknown as Record<string, string>;
     // const formDataObj = Object.fromEntries(formData.entries());
     const params = new URLSearchParams(formData);
+    const hasDateFilter = searchParams.get('date');
+    if (hasDateFilter) params.append('date', hasDateFilter);
     setSearchParams(params);
   }
 
@@ -29,7 +31,7 @@ function Search() {
           <h2>Title</h2>
           <input type="text" name="title" />
         </div>
-        <div className="flex row">
+        <div className="flex row form-div">
           <h2>Tags</h2>
           <select className="select" name="tags">
             <option disabled selected value="">Selecione uma opção</option>
@@ -41,14 +43,18 @@ function Search() {
           <button
             className="button"
             type="button"
-            onClick={() => setSearchParams('')}
+            onClick={() => {
+              const params = new URLSearchParams();
+              const hasDateFilter = searchParams.get('date');
+              if (hasDateFilter) params.append('date', hasDateFilter);
+              setSearchParams(params);
+            }}
           >
             Limpar filtros
           </button>
         </div>
       </form>
     </section>
-
   );
 }
 
