@@ -4,6 +4,8 @@ import {
 import { useSearchParams } from 'react-router-dom';
 import DataContext from '../context/DataContext';
 import Filter from './Filter';
+import lupaImage from '../assests/lupa.png';
+import '../css/search.css';
 
 function Search() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -53,44 +55,57 @@ function Search() {
   }
 
   return (
-    <search className="flex column justify section">
-      <section className="flex row justify form">
-        <form className="flex row form-div" onSubmit={handleIntersectionInputSubmit}>
-          <label htmlFor="name-filter">
-            Pesquisar por aluno:
-            <input id="name-filter" type="text" name="name" />
-            <button type="submit">Q</button>
-          </label>
+    <section className="search-component">
+      <section className="search-section-form">
+        <form className="search-form" onSubmit={handleIntersectionInputSubmit}>
+          <fieldset>
+            <legend>Pesquisar por aluno:</legend>
+            <div className="search-input-container">
+              <input id="name-filter" type="text" name="name" className="search-input" />
+              <button type="submit" className="search-button">
+                <img src={lupaImage} alt="Lupa" className="search-button-image" />
+              </button>
+            </div>
+          </fieldset>
         </form>
-        <form className="flex row form-div" onSubmit={handleIntersectionInputSubmit}>
-          <label htmlFor="title-filter">
-            Pesquisar no título:
-            <input id="title-filter" type="text" name="title" />
-            <button type="submit">Q</button>
-          </label>
+        <form className="search-form" onSubmit={handleIntersectionInputSubmit}>
+          <fieldset>
+            <legend> Pesquisar no título:</legend>
+            <div className="search-input-container">
+              <input id="title-filter" type="text" name="name" className="search-input" />
+              <button type="submit" className="search-button">
+                <img src={lupaImage} alt="Lupa" className="search-button-image" />
+              </button>
+            </div>
+          </fieldset>
         </form>
-        <form className="flex row form-div" onSubmit={handleIntersectionInputSubmit}>
-          <label htmlFor="description-filter">
-            Pesquisar na descrição:
-            <input id="description-filter" type="text" name="description" />
-            <button type="submit">Q</button>
-          </label>
+        <form className="search-form" onSubmit={handleIntersectionInputSubmit}>
+          <fieldset>
+            <legend> Pesquisar na descrição:</legend>
+            <div className="search-input-container">
+              <input id="description-filter" type="text" name="name" className="search-input" />
+              <button type="submit" className="search-button">
+                <img src={lupaImage} alt="Lupa" className="search-button-image" />
+              </button>
+            </div>
+          </fieldset>
         </form>
         <div className="flex row">
-          <label htmlFor="tags-filter">
+          <fieldset>
             Selecionar tags:
             <select id="tags-filter" className="select" name="tags" onChange={handleUnionParamChange}>
               {availableTags.map((tag) => <option key={tag}>{tag}</option>)}
             </select>
-          </label>
+          </fieldset>
         </div>
         <div className="flex row">
-          <label htmlFor="date-filter">
+          <fieldset>
             Selecionar periodo:
             <select id="date-filter" className="select" name="date" onChange={handleIntersectionParamChange}>
+              <option value="">data</option>
               {availableMonths.map((m) => <option value={m} key={m}>{m.replace('-', '/')}</option>)}
             </select>
-          </label>
+          </fieldset>
         </div>
         <div className="flex row div-buttons">
           <button
@@ -107,7 +122,7 @@ function Search() {
           </button>
         </div>
       </section>
-      <div className="divisor" />
+      <div className="search-divisor" />
       <section className="flex row">
         <h2>Filtros aplicados:</h2>
         <ul className="flex row justify">
@@ -116,7 +131,7 @@ function Search() {
           )}
         </ul>
       </section>
-    </search>
+    </section>
   );
 }
 

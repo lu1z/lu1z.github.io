@@ -7,6 +7,7 @@ type Post = {
   linkedin: string,
   email: string,
   title: string,
+  link: string,
   illustration: string,
   description: string,
   tags: string[],

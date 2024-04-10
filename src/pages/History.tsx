@@ -92,21 +92,17 @@ function History() {
           .map(({ month, year, highlights }) => (
             <div key={`history-${month}-${year}`} className="history-month context-highlight">
               <h1 className="history-month-title">{`${month} ${year}`}</h1>
-              <div className="main-highlight">
-                {
-                highlights.map((post) => <Highlight key={post.id} post={post} />)
-              }
-              </div>
+              <ul className="main-highlight">
+                {highlights.slice(0, 2).map((post) => (
+                  <li className="li-highlight" key={post.id}>
+                    <Highlight post={post} />
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
+
       </div>
-      {/* <h1>History</h1>
-      {allMonths.map((m) => (
-        <Link key={m} to={{ pathname: '/home', search: `date=${m}` }}>
-          {m.replace('-', '/')}
-          <br />
-        </Link>
-      ))} */}
     </>
   );
 }

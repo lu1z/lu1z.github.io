@@ -1,0 +1,28 @@
+.page-header {
+    transition: background-color 0.3s; 
+    padding: 24px;
+}
+  
+.page-header:hover {
+    background-color: #1a1b1e;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+.menu-item:hover {
+    box-shadow: 0 0 5px rgba(233, 222, 222, 0.5); /* Adiciona uma sombra ao passar o mouse */
+}
+  

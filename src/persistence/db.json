@@ -11,6 +11,7 @@
       "title": "Melhor Cortes de Cabelo",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdkltSgh66S9pHrKoUgLJAef5hJeiq1a5FQQ&s",
       "description": "Homer Jay Simpson é um personagem de desenho animado criado por Matt Groening. Ele é o patriarca da família ficcional Simpson, de Os Simpsons uma série de televisão da FOX. Sua primeira aparição na televisão ocorreu em 19 de abril de 1987.",
+      "link": "https://www.google.com",
       "tags": [
         "html",
         "css"
@@ -27,6 +28,7 @@
       "title": "Porco Aranha",
       "description": "Porco-Aranha é o porco de estimação de Homer. Homer encontra pela primeira vez o porco-aranha quando ele e Bart estão no Krusty Burger. Ele está sendo usado em um vídeo comercial para um novo hambúrguer, o AVC (abreviação de'acidente vascular cerebral'). Depois que o comercial é envolto Krusty diz para matar o porco.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSph97JJU-L82xpaNasHkTOdAGSlcn4Yb4izRtiJoXyBQQk7a4mJ6PYN3rFE86dYjdu1K8&usqp=CAU",
+      "link": "https://www.google.com",
       "tags": [
         "html",
         "css",
@@ -47,6 +49,7 @@
       "title": "Bart Marvel",
       "description": "Bartholomew JoJo Simpson é um personagem fictício da série de televisão de animação Os Simpsons. Ele é dublado por Nancy Cartwright e apareceu pela primeira vez na televisão em The Tracey Ullman Show em 19 de abril de 1987.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IpON5NEZ6jZci0udXjJVvmlW_brPYZvAxg&s",
+      "link": "https://www.google.com",
       "tags": [
         "html",
         "java",
@@ -66,6 +69,7 @@
       "title": "Mona Lisa",
       "description": "Lisa Marie Simpson é um personagem fictício da série de televisão de animação Os Simpsons. Ela é dublada por Yeardley Smith e apareceu pela primeira vez na televisão em The Tracey Ullman Show em 19 de abril de 1987.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdA009aRG5kBsNDokxneUguAnHEP6TP0sksw&s",
+      "link": "https://www.google.com",
       "tags": [
         "css",
         "react",
@@ -83,6 +87,7 @@
       "title": "Margonic",
       "description": "Marjorie Jacqueline Simpson é um personagem fictício da série de televisão de animação Os Simpsons. Ela é dublada por Julie Kavner e apareceu pela primeira vez na televisão em The Tracey Ullman Show em 19 de abril de 1987.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNrT6ugX4hAUg4d-xhcgJ0Om0G0z7EbjBFJA&s",
+      "link": "https://www.google.com",
       "tags": [
         "html",
         "css",
@@ -94,7 +99,7 @@
     },
     {
       "id": 3,
-      "date": { "day": 9, "month": 4, "year": 2024 },
+      "date": { "day": 9, "month": 3, "year": 2024 },
       "name": "Godzilla",
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbFKM8IDqWKFBPbvVZaevWyMph8cfz5nITHw&s",
       "github": "link.@test.com",
@@ -103,6 +108,7 @@
       "title": "ゴジラ Gojira",
       "description": "Godzilla, no filme original Godzilla, é uma criatura cujo habitat subaquático foi completamente destruído por um teste de bomba de hidrogênio que também matou sua família e queimou e o deixou com cicatrizes. Com raiva e expulso de sua casa, Godzilla jogou sua ira contra a humanidade, destruindo todos os barcos que encontrou e depois atacando a cidade de Tóquio",
       "illustration": "https://www.mundoconectado.com.br/wp-content/uploads/2024/03/14011206/Godzilla-e-Kong-O-Novo-Imperio-ganha-trailer-final-cheio-de-acao-912x569.jpg",
+      "link": "https://www.google.com",
       "tags": [
         "html",
         "css",
@@ -114,7 +120,7 @@
     },
     {
       "id": 4,
-      "date": { "day": 4, "month": 4, "year": 2024 },
+      "date": { "day": 4, "month": 3, "year": 2024 },
       "name": "Kong",
       "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/King_Kong_in_Dublin.jpg/400px-King_Kong_in_Dublin.jpg?20090416213709",
       "github": "link",
@@ -123,6 +129,7 @@
       "title": "キングコング対ゴジラ",
       "description": "King Kong, também referido simplesmente como Kong, é um monstro gigante fictício, ou kaiju, que se assemelha a um gorila, que apareceu em várias mídias desde 1933.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT75idGKE4i-cAMMyRvv-xbD_eFuFohvs0YyWgGge62Sw&s",
+      "link": "https://www.google.com",
       "tags": [
         "html",
         "css",
@@ -134,7 +141,7 @@
     },
     {
       "id": 5,
-      "date": { "day": 4, "month": 4, "year": 2024 },
+      "date": { "day": 4, "month": 3, "year": 2024 },
       "name": "Anguirus",
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfF4NZRse_2NHgTfY3rJyQfZLoiXsobBPhzw&s",
       "github": "link",
@@ -143,6 +150,7 @@
       "title": "アンギラス Angirasu ",
       "description": "Anguirus é retratado como um lutador tenaz e feroz. Apesar de constantemente lutar contra inimigos mais fortes que si, Anguirus raramente desiste e sempre luta viciosamente. Apesar de sua natureza feroz, Anguirus tradicionalmente é mostrado como sendo um amigo próximo de Godzilla.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8mbfsPyzHFIdgRSIYMPqSd5qACrw7lGX5AA&s",
+      "link": "https://www.google.com",
       "tags": [
         "frontend",
         "javaScript",
@@ -152,7 +160,7 @@
     },
     {
       "id": 6,
-      "date": { "day": 4, "month": 4, "year": 2024 },
+      "date": { "day": 4, "month": 3, "year": 2024 },
       "name": "Rodan",
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQraUdGXvkMZjXHmCeCDa4WGkKgfA4hoZgL6w&s",
       "github": "link",
@@ -161,6 +169,7 @@
       "title": "ラドン Radon",
       "description": "Rodan é um pterossauro gigante que apareceu pela primeira vez no filme de 1956 Rodan. Rodan é um dos monstros mais poderosos do universo de Godzilla, sendo capaz de voar a velocidades supersônicas e criar ventos fortes com suas asas.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Zakm8CdfebnmomgrhDu12f-zgPR_S2JYlA&s",
+      "link": "https://www.google.com",
       "tags": [
         "frontend",
         "javaScript",
@@ -171,7 +180,7 @@
     },
     {
       "id": 7,
-      "date": { "day": 4, "month": 4, "year": 2024 },
+      "date": { "day": 4, "month": 3, "year": 2024 },
       "name": "Mothra",
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeT4N4gwsB7_KOLYaWxpiPvI2hshoQ7QEoug&s",
       "github": "link",
@@ -180,12 +189,91 @@
       "title": "モスラ Mosura",
       "description": "Mothra é uma divindade benevolente que protege a Terra e a humanidade. Mothra é uma das poucas criaturas que pode se comunicar com os humanos, e é frequentemente retratada como uma aliada de Godzilla.",
       "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnDhi8AB3t9Kdr7GwF3WEo5m1VUlEalWjtQA&",
+      "link": "https://www.google.com",
       "tags": [
         "react",
         "backend",
         "c#",
         "java",
         "tailwind"
+      ]
+    },
+    {
+      "id": 11,
+      "date": { "day": 9, "month": 4, "year": 2024 },
+      "name": "Higo Jhon",
+      "picture": "https://media.licdn.com/dms/image/C4D03AQFFM7C3QI1drQ/profile-displayphoto-shrink_100_100/0/1655912672004?e=1718236800&v=beta&t=JO1W3zcrx7-tFiiS9l0FRQPl0uSy4iLsHj5CPb42KYg",
+      "github": "https://github.com/HigoJhon",
+      "linkedin": "https://www.linkedin.com/in/higo-jhon/",
+      "email": "higojhon98@gmail.com",
+      "title": "Projeto Wallet",
+      "description": "Projeto Wallet desenvolvido com React, JavaScript, HTML e CSS. O projeto consiste em uma aplicação web para controle de gastos.",
+      "illustration": "https://media.licdn.com/dms/image/C4D22AQHyLgeVtlhPfw/feedshare-shrink_2048_1536/0/1673192088822?e=1715817600&v=beta&t=ye1AYzB7DXLXE7XXHPvcUhg2wpDSzw0-YQlfd6kNyKM",
+      "link": "https://higojhon.github.io/Wallet/",
+      "tags": [
+        "javascript",
+        "react",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": 12,
+      "date": { "day": 9, "month": 4, "year": 2024 },
+      "name": "Luiz Alberto",
+      "picture": "https://avatars.githubusercontent.com/u/11777510?v=4",
+      "github": "https://github.com/lu1z",
+      "linkedin": "https://www.linkedin.com/in/luiz-rosa/",
+      "email": "luiz.alberto.laus.rosa@gmail.com",
+      "title": "Clone Netflix",
+      "link": "https://lu1z.github.io/clone-netflix/",
+      "description": "Desenvolvedor Full Stack com experiência em desenvolvimento de aplicações web e mobile. Atualmente trabalhando com desenvolvimento de aplicações web com React e Node.js.",
+      "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiTeMNcLFpIBOLXNA886fxxSkr9UKXUlwAlHPU4C3YK-6e0iNbAJ9aWwl6XZpHdVESekQ&usqp=CAU",
+      "tags": [
+        "javascript",
+        "react",
+        "node.js",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": 13,
+      "date": { "day": 9, "month": 4, "year": 2024 },
+      "name": "Julia Viana",
+      "picture": "https://avatars.githubusercontent.com/u/106852581?v=4",
+      "github": "https://github.com/JuliaV05",
+      "linkedin": "https://www.linkedin.com/in/julia-viana05/",
+      "email": "juliavianamendes05@gmail.com",
+      "title": "Desenvolvedora Front-end",
+      "link": "https://www.credential.net/f4b5f973-192d-455f-9b9b-b123ca1ed65d#gs.7qv0f6",
+      "description": "Desenvolvedora Front-end com experiência em desenvolvimento de aplicações web. Atualmente trabalhando com desenvolvimento de aplicações web com React.",
+      "illustration": "https://media.licdn.com/dms/image/sync/D4D27AQGvuHhM_7EXSQ/articleshare-shrink_800/0/1711136989515?e=1713362400&v=beta&t=XVQowZ9Dj1WpQYMTYfLPdPH7rRLYsIN_SjAkY0Qrq6w",
+      "tags": [
+        "javascript",
+        "react",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": 14,
+      "date": { "day": 9, "month": 4, "year": 2024 },
+      "name": "Mauricio Passos",
+      "picture": "https://avatars.githubusercontent.com/u/122632240?v=4",
+      "github": "https://github.com/MauricioPassosF",
+      "linkedin": "https://www.linkedin.com/in/mauriciopassosdev/",
+      "email": "mauricio.passos97@gmail.com",
+      "title": "Desevolvedor Backend",
+      "link": "https://www.linkedin.com/in/mauriciopassosdev/details/certifications/",
+      "description": "Desenvolvedor Backend com experiência em desenvolvimento de aplicações web. Atualmente trabalhando com desenvolvimento de aplicações web com Node.js.",
+      "illustration": "https://media.licdn.com/dms/image/D4D2DAQEsaefhufKq2w/profile-treasury-document-cover-images_480/0/1709517824788?e=1713366000&v=beta&t=suHkF3MphM-S0ZDWT0UmW64fHSbpsKPCcyO7CwwScOg",
+      "tags": [
+        "javascript",
+        "TypeScript",
+        "Docker",
+        "Node.js",
+        "SQL"
       ]
     }
   ]

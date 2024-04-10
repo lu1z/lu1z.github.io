@@ -5,40 +5,42 @@ import Search from '../components/Search';
 import DataContext from '../context/DataContext';
 import Highlight from '../components/Highlight';
 import Post from '../types/PostType';
+import '../css/highlight.css';
+import '../index.css';
 
 function Home() {
   const [searchParams] = useSearchParams();
   const data = useContext(DataContext);
 
-  const filtered = useMemo(
-    () => {
-      const searchFields = [...searchParams.entries()];
-      return searchFields.reduce<Post[]>(
-        (acc, [key, val]) => acc.filter(
-          ({ [key]: v }) => {
-            if (Array.isArray(v)) return v.includes(val);// tags
-            if (typeof v === 'object') return `${v.month}-${v.year}` === val;// data
-            if (typeof v === 'number') return v === Number(val);// id
-            if (typeof v === 'string') return v.toLowerCase().includes(val.toLowerCase());// strings
-            return false;
-          },
-        ),
-        [...data],
-      );
-    },
-    [data, searchParams],
-  );
+  const filteredPosts = useMemo(() => {
+    const searchFields = [...searchParams.entries()];
+    return searchFields.reduce<Post[]>(
+      (acc, [key, val]) => acc.filter(({ [key]: fieldValue }) => {
+        if (Array.isArray(fieldValue)) return fieldValue.includes(val); // tags
+        if (typeof fieldValue === 'object') return `${fieldValue.month}-${fieldValue.year}` === val; // data
+        if (typeof fieldValue === 'number') return fieldValue === Number(val); // id
+        if (typeof fieldValue === 'string') return fieldValue.toLowerCase().includes(val.toLowerCase()); // strings
+        return false;
+      }),
+      [...data],
+    );
+  }, [data, searchParams]);
+
   return (
-    <>
+    <main className="main-home">
       <Header />
       <Search />
-      <div className="context-highlight history-month">
-        <h1>Destaques:</h1>
-        <main>
-          <ul className="main-highlight">{filtered.map((post) => <li key={post.id}><Highlight post={post} /></li>)}</ul>
-        </main>
-      </div>
-    </>
+      <section className="context-highlight history-month">
+        <h1 className="h1-title">Destaques</h1>
+        <ul className="main-highlight">
+          {filteredPosts.map((post) => (
+            <li className="li-highlight" key={post.id}>
+              <Highlight post={post} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    </main>
   );
 }
 
