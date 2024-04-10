@@ -19,7 +19,7 @@ function Home() {
             if (Array.isArray(v)) return v.includes(val);// tags
             if (typeof v === 'object') return `${v.month}-${v.year}` === val;// data
             if (typeof v === 'number') return v === Number(val);// id
-            if (typeof v === 'string') return v.includes(val);// strings
+            if (typeof v === 'string') return v.toLowerCase().includes(val.toLowerCase());// strings
             return false;
           },
         ),
@@ -32,13 +32,11 @@ function Home() {
     <>
       <Header />
       <Search />
-      <div className="context-highlight">
-        <h1>Destaques do mês</h1>
-        <div className="main-highlight">
-          {
-            filtered.map((post) => <Highlight key={post.id} post={post} />)
-          }
-        </div>
+      <div className="context-highlight history-month">
+        <h1>Destaques:</h1>
+        <main>
+          <ul className="main-highlight">{filtered.map((post) => <li key={post.id}><Highlight post={post} /></li>)}</ul>
+        </main>
       </div>
     </>
   );

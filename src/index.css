@@ -7,6 +7,11 @@
 
 /* search  */
 
+.divisor {
+  border-bottom: 2px solid #ddf8e7;
+  margin: 20px;
+}
+
 h2 {
   margin-right: 10px;
 }
@@ -119,7 +124,7 @@ h2 {
 
 
 .div-highlight {
-  width: 46%;
+  width: 46vw;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -351,7 +356,7 @@ h2 {
 
 /* header */
 
-header .container-button {
+.container-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,6 +395,9 @@ header .container-button {
   transition: 100ms;
 }
 
+li {
+  list-style: none;
+}
 
 /* @media screen and (max-width: 768px) {
   .container-button .button-options {
