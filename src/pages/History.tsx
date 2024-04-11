@@ -102,7 +102,7 @@ function History() {
               <span className="highlight-link">
                 {
                   highlights.slice(0, 1).map((index) => (
-                    <Link key={index.date.day} to={{ pathname: `/home?date=${index.date.month}-${index.date.year}` }} className="highlight-link__button">MOSTRAR MAIS</Link>
+                    <Link key={index.date.day} to={`/home?date=${index.date.month}-${index.date.year}`} className="highlight-link__button">SAIBA MAIS</Link>
                   ))
                 }
               </span>
