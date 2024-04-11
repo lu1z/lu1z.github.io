@@ -1,4 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
+import '../css/filter.css';
+import '../css/tag.css';
 
 type FilterProps = {
   filterKey: string,
@@ -14,9 +16,9 @@ function Filter({ filterKey: k, filterValue: v }: FilterProps) {
   }
 
   return (
-    <label htmlFor={v} className={`tag ${v}`}>
+    <label htmlFor={v} className={`filter tag ${v} `}>
       {v}
-      <button type="button" id={v} onClick={handleClick}>X</button>
+      <button type="button" className="filter-button" id={v} onClick={handleClick}>X</button>
     </label>
   );
 }

@@ -90,26 +90,26 @@ function Search() {
             </div>
           </fieldset>
         </form>
-        <div className="flex row">
-          <fieldset>
+        <div className="search-select-container">
+          <label htmlFor="tags-filter">
             Selecionar tags:
-            <select id="tags-filter" className="select" name="tags" onChange={handleUnionParamChange}>
+            <select id="tags-filter" className="search-select" name="tags" onChange={handleUnionParamChange}>
               {availableTags.map((tag) => <option key={tag}>{tag}</option>)}
             </select>
-          </fieldset>
+          </label>
         </div>
-        <div className="flex row">
-          <fieldset>
+        <div className="search-select-container">
+          <label htmlFor="date-filter">
             Selecionar periodo:
-            <select id="date-filter" className="select" name="date" onChange={handleIntersectionParamChange}>
+            <select id="date-filter" className="search-select" name="date" onChange={handleIntersectionParamChange}>
               <option value="">data</option>
               {availableMonths.map((m) => <option value={m} key={m}>{m.replace('-', '/')}</option>)}
             </select>
-          </fieldset>
+          </label>
         </div>
-        <div className="flex row div-buttons">
+        <div className="search-clean-div">
           <button
-            className="button"
+            className="search-clean-button"
             type="button"
             onClick={() => {
               const params = new URLSearchParams();
@@ -123,11 +123,15 @@ function Search() {
         </div>
       </section>
       <div className="search-divisor" />
-      <section className="flex row">
+      <section className="search-filter-container{">
         <h2>Filtros aplicados:</h2>
-        <ul className="flex row justify">
+        <ul className="search-filter-list">
           {[...searchParams.entries()].map(
-            ([k, v]) => <li key={v}><Filter filterKey={k} filterValue={v} /></li>,
+            ([key, value]) => (
+              <li className="search-filter-list-item" key={value}>
+                <Filter filterKey={key} filterValue={value} />
+              </li>
+            ),
           )}
         </ul>
       </section>

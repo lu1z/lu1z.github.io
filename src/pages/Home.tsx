@@ -7,6 +7,7 @@ import Highlight from '../components/Highlight';
 import Post from '../types/PostType';
 import '../css/highlight.css';
 import '../index.css';
+import Footer from '../components/Footer';
 
 function Home() {
   const [searchParams] = useSearchParams();
@@ -40,6 +41,7 @@ function Home() {
           ))}
         </ul>
       </section>
+      <Footer />
     </main>
   );
 }
