@@ -43,6 +43,11 @@
     margin: 60px 0;
 }
 
+.info-person .name-person
+ {
+   text-decoration: ;
+}
+
 .div-highlight .img-person {
     width: 180px;
     height: 180px;
@@ -70,6 +75,21 @@
     flex-direction: row;
     gap: 10px;
 }
+
+ .flex-justify {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row; /* Alterado de column para row */
+    }
+
+    .flex-justify a:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .flex-justify a:nth-child(2) {
+        margin-right: 5px;
+    }
+    
 
 .div-highlight .social-logo {
     height: 40px;
