@@ -124,3 +124,35 @@
 .img-person .img-port {
     object-fit: cover;
 }
+
+@media screen and (max-width: 1206px) {
+    .div-highlight {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .li-highlight {
+        width: 80%;
+    }
+
+    .div-student {
+        margin: 10px;
+    }
+    .flex-justify {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row; /* Alterado de column para row */
+    }
+
+    .flex-justify a:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .flex-justify a:nth-child(2) {
+        margin-right: 5px;
+    }
+    
+
+}
