@@ -94,6 +94,7 @@ function Search() {
           <label htmlFor="tags-filter">
             Selecionar tags:
             <select id="tags-filter" className="search-select" name="tags" onChange={handleUnionParamChange}>
+              <option value="">tags</option>
               {availableTags.map((tag) => <option key={tag}>{tag}</option>)}
             </select>
           </label>

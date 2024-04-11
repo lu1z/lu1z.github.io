@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 1,
-      "date": { "day": 7, "month": 1, "year": 2024 },
+      "date": { "day": 7, "month": 1, "year": 2023 },
       "name": "Home",
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhjszml3FlZBR4oXHb_1wsV0kTC2VluQrvAA&s",
       "github": "link",
