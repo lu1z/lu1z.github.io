@@ -27,6 +27,7 @@ li {
 
 .search-section-form{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
@@ -114,21 +115,25 @@ li {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 845px) {
   .search-section-form {
-    margin-left: 0;
-  }
-
-  .search-form {
-    margin-right: 0;
-    margin-bottom: 10px;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
-  .search-form .select {
-    margin: 0;
+  .search-select-container {
+    margin-top: 10px;
   }
 
+  .search-clean-div {
+    margin-top: 10px;
+  }
+
+  .search-select-container {
+    width: 100px;
+  }
+  
 }
 
 @media screen and (max-width: 1300px) {

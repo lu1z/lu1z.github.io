@@ -65,3 +65,10 @@
 .highlight-link__button:hover {
   background-color: #45a049; /* Cor de fundo do botão ao passar o mouse */
 }
+
+@media screen and (max-width: 1000px) {
+  .history-form {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
