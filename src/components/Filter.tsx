@@ -15,6 +15,8 @@ function Filter({ filterKey: k, filterValue: v }: FilterProps) {
     setSearchParams(searchParams);
   }
 
+  console.log(v);
+
   return (
     <label htmlFor={v} className={`filter tag ${v} `}>
       {v}

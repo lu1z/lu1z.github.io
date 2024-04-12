@@ -1,6 +1,7 @@
 import {
   useContext, useEffect, useMemo, useState,
 } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import DataContext from '../context/DataContext';
 import Post from '../types/PostType';
@@ -101,7 +102,7 @@ function History() {
               <span className="highlight-link">
                 {
                   highlights.slice(0, 1).map((index) => (
-                    <a key={index.date.day} href={`/home?date=${index.date.month}-${index.date.year}`} className="highlight-link__button">SAIBA MAIS</a>
+                    <Link key={index.date.day} to={`/home?date=${index.date.month}-${index.date.year}`} className="highlight-link__button">SAIBA MAIS</Link>
                   ))
                 }
               </span>
