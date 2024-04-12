@@ -71,4 +71,9 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+
+  .history-form-select {
+    margin-right: 0;
+    width: 80px;
+  }
 }
