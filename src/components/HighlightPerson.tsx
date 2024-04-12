@@ -18,7 +18,7 @@ function HighlightPerson({ post }: HighlightProps) {
     <div className="div-student">
       <img className="img-person" src={picture} alt="Foto de perfil" />
       <div className="info-person">
-        <p>{`Nome: ${name}`}</p>
+        <p className="name-person">{`Nome: ${name}`}</p>
         <div className="flex-justify">
           <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
             <img alt="Email" src={emailImg} className="social-logo" />

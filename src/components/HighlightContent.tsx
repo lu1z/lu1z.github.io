@@ -17,7 +17,8 @@ function HighlightContent({ post }: HighlightProps) {
       <div className="img-port" style={{ backgroundImage: `url(${illustration})` }}>
         <div className="overlay">
           <h3>{description}</h3>
-          <div className="flex row div-tags">
+          <br />
+          <div className="div-tags">
             {tags.map((tag) => (
               <h4 key={`${id}-${tag}`} className={`tag ${tag}`}>
                 {tag}

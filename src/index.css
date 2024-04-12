@@ -41,16 +41,19 @@ h2 {
   border: 2px solid gray;
   padding: 34px;
   border-radius: 24px;
-  width: 75%;
+  width: 65%;
   margin: 20px auto;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   display: flex;
   justify-content: space-around;
 }
 
-.form-div {
-  margin-left: 10px;
+.form {
+  width: 70%;
+  display:contents ;
+  justify-content: center;
   align-items: center;
+  margin-left: 110px;
 }
 /*
 
@@ -69,7 +72,7 @@ h2 {
 
 .select {
   height: fit-content;
-  margin: auto;
+  margin: 9px;
   margin-left: 5px;
 }
 .button {
@@ -79,6 +82,7 @@ h2 {
   height: 40px;
   width: 120px; 
 }
+
 
 @media screen and (max-width: 980px) {
   .section {
@@ -226,3 +230,11 @@ li {
     width: 100%;
   } */
 /* } */
+
+@media screen and (max-width: 410px) {
+  .form {
+    display: grid;
+    width: 0px;
+    gap: 10px
+  }
+}
